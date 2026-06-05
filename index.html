@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypertext Studios | Graphic Design</title>
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Basic Page Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #40c4ef;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Menu Bar Styling */
+        nav {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 25px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #40c4ef;
+        }
+
+        /* Hero / Home Section */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+	/* Logo design customization */
+        .studio-logo {
+            max-width: 180px; /* Controls the size of your logo */
+            height: auto;
+            margin-bottom: 20px; /* Spacing between logo and your headline text */
+            display: inline-block;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #111;
+        }
+        header p {
+            font-size: 1.3rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Section Headers */
+        .section-title {
+            text-align: center;
+            margin-top: 60px;
+            color: #111;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Gallery Grid Layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 20px 40px 60px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual Project Cards */
+        .portfolio-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* Hover effect to make the portfolio feel interactive */
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background-color: #e0e0e0; /* Clean placeholder */
+            display: block;
+        }
+        .portfolio-content {
+            padding: 20px;
+        }
+        .portfolio-item h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            color: #111;
+        }
+        .portfolio-item p {
+            margin: 0;
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* About Section */
+        #about {
+            background: white;
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 50px 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        #about p {
+            font-size: 1.2rem;
+            color: #444;
+        }
+
+        /* Simple Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #111;
+            color: #aaa;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Us</a>
+    </nav>
+
+    <header id="home">
+        <img src="Hypertext_Logo.jpg" alt="Hypertext Studios Logo" class="studio-logo">
+        
+        <h1>Hypertext Studios</h1>
+        <p>We are a forward-thinking graphic design team specializing in modern branding, bold typography, and visual identity.</p>
+    </header>
+
+    <h2 class="section-title" id="gallery">Our Work</h2>
+<div class="gallery">
+    
+    <a href="brand-identity.html" class="portfolio-card-link">
+        <div class="portfolio-item">
+            <img src="aaa_lc.jpg" alt="Brand Identity Design">
+            <div class="portfolio-content">
+                <h3>Brand Identity</h3>
+                <p>Logo design, style guides, and corporate branding systems.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="poster-design.html" class="portfolio-card-link">
+        <div class="portfolio-item">
+            <img src="aaa_poster_ps.jpg" alt="Poster Design Layout">
+            <div class="portfolio-content">
+                <h3>Poster Design</h3>
+                <p>Event marketing, artistic concepts, and typography layout.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="ui-ux-design.html" class="portfolio-card-link">
+        <div class="portfolio-item">
+            <img src="Ludka_Poster_Web.jpg" alt="UI/UX Design Mockup">
+            <div class="portfolio-content">
+                <h3>UI/UX Design</h3>
+                <p>Website layouts, interactive concepts, and mobile app mockups.</p>
+            </div>
+        </div>
+    </a>
+
+</div>
+
+    <section id="about">
+        <h2 style="font-size: 2.5rem; margin-top: 0; color: #111;">About Us</h2>
+        <p>Hypertext Studios is a creative design studio focused on bringing ideas to life through clean, contemporary, and high-impact aesthetics. We partner with passionate brands to tell their unique stories through memorable visual design.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hypertext Studios. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
